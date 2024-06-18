@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+
+<body>
+  <div class="main-div">
+    {{>navbar}}
+    <section>
+      <div class="input-div">
+        <input type="text" placeholder="Enter city name" id="inputField" />
+        <button onclick="checkWeather()">Search</button>
+      </div>
+    </section>
+    <section class="result-section">
+      <div class="card">
+        <div class="currentTime">
+          <h1 id="time"></h1>
+        </div>
+        <div class="second-card">
+          <div class="location">
+            <h1 id="city">Output Box</h1>
+          </div>
+          <div class="temp">
+            <h1 id="currTemp"></h1>
+            <h1 id="maxTemp"></h1>
+            <h1 id="minTemp"></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h1>© CopyRight | 2024</h1>
+      <h2>Developed | Vikrant Sharma</h2>
+    </footer>
+  </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
