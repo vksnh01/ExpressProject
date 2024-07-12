@@ -1,9 +1,10 @@
+require('dotenv').config()
 const express = require("express");
 const app = express();
 const path = require("path");
 const hbs = require("hbs");
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 const publicPath = path.join(__dirname, "../public");
 const partialPath = path.join(__dirname, "../templete/partials");

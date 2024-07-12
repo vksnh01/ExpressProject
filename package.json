@@ -2,13 +2,17 @@
   "name": "expressproject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vikrant sharma",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "env": "^0.0.2",
     "express": "^4.19.2",
     "hbs": "^4.2.0"
   }
