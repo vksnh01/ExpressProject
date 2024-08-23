@@ -4,7 +4,8 @@ const app = express();
 const path = require("path");
 const hbs = require("hbs");
 
-const PORT = process.env.PORT||8080;
+//const PORT = process.env.PORT||8080;
+const PORT =8080;
 
 const publicPath = path.join(__dirname, "../public");
 const partialPath = path.join(__dirname, "../templete/partials");
