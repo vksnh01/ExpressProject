@@ -49,7 +49,7 @@ const dateFunction = () => {
   const dated = date.getDate();
   const month = months[date.getMonth()];
   const day = days[date.getDay()];
-  const hr = date.gethours();
+  const hr = date.getHours();
 let hour;
   hr > 12 ? (hour = hr - 12) : (hour = hr);
   //  hour = date.getHours() - 12;
