@@ -49,8 +49,9 @@ const dateFunction = () => {
   const dated = date.getDate();
   const month = months[date.getMonth()];
   const day = days[date.getDay()];
-
-  let hour = date.getHours() - 12;
+let hour;
+  hr > 12 ? (hour = hr - 12) : (hour = hr);
+  //  hour = date.getHours() - 12;
   let min = date.getMinutes();
   let period = "am";
   hour >= 12 ? (period = "pm") : (period = "am");
